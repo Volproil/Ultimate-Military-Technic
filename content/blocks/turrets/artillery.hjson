@@ -1,0 +1,60 @@
+type: ItemTurret
+name: "Artillery"
+description: "excellent powerful artillery with a large radius but slow"
+health: 4500
+size: 4
+recoilAmount: 5
+reload: 1080
+range: 1500
+ammoUseEffect: casing3
+shootSound: explosionbig
+targetAir: false
+inaccuracy: 5.0
+rotateSpeed: 0.1
+ammoTypes: {
+  artillery-shell: {
+    speed: 2.0
+    lifetime: 250
+    damage: 1000
+    fragBullets: 10
+    fragBullet: {
+      width: 5
+      height: 5
+      damage: 15
+      speed: 3.0
+      lifetime: 20
+      splashDamageRadius: 10
+      splashDamage: 10
+      type: ArtilleryBulletType
+      status: burning
+    }
+    type: BasicBulletType
+    lifetime: 1
+    speed: 0
+    damage: 0
+    spawnUnit: m107rocket
+    x: 0
+    y: 40
+  },
+  "artillery-shell-pyro": {
+    type: BasicBulletType
+    lifetime: 1
+    speed: 0
+    damage: 0
+    spawnUnit: m107rocket-pyro
+    x: 0
+    y: 40  # Позиционирует снаряд в конце дула
+  }
+}
+consumes: {
+  liquids: [
+    { liquid: water, amount: 1.5 }
+  ]
+}
+requirements: [
+   { item: thorium, amount: 390 }
+   { item: silicon, amount: 630 }
+]
+coolantMultiplier: 0.7
+category: turret
+research: mortar

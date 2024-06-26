@@ -1,0 +1,6 @@
+type: Item
+name: artillery-shell
+description: A powerful artillery shell used for long-range bombardment.
+color: e8af7d
+hardness: 3
+explosiveness: 1.5

@@ -1,0 +1,46 @@
+type: GenericCrafter
+name: "AmmoFactory"
+size: 2
+hasPower: true
+hasLiquid: false
+hasItems: true
+craftTime: 1020
+health: 240
+itemCapacity: 30
+consumes: {
+  power: 2.0
+  items: [
+    { item: thorium, amount: 10 }
+    { item: blast-compound, amount: 10 }
+    { item: pyratite, amount: 10 }
+    { item: spore-pod, amount: 10 }
+  ]
+}
+outputItems: [
+  { item: artillery-shell, amount: 1 }
+]
+requirements: [
+  { item: lead, amount: 120 }
+  { item: titanium, amount: 80 }
+  { item: silicon, amount: 60 }
+]
+research: {
+  parent: kiln
+  requirements: [
+    { item: lead, amount: 2200 }
+    { item: silicon, amount: 1000 }
+    { item: titanium, amount: 700 }
+  ]
+}
+category: crafting
+draw: [
+  {
+    type: DrawDefault
+  },
+  {
+    type: DrawRegion
+    suffix: "-top"
+    progress: true
+    heatColor: true
+  }
+]

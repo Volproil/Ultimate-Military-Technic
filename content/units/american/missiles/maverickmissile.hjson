@@ -1,0 +1,65 @@
+name: maverickrocket
+type: missile
+controller: MissileAI
+flying: true
+speed: 8.8
+maxRange: 4
+lifetime: 120
+hidden: true
+targetAir: false
+targetGround: true
+radius: 20
+envEnabled: 17 
+envDisabled: 0 
+outlineColor: 2d2f39
+engineColor: ff770e 
+trailColor: ffb114
+engineSize: 1.8 
+engineOffset: 7
+rotateSpeed: 1.25 
+trailLength: 10 
+missileAccelTime: 15 
+lowAltitude: true 
+fogRadius: 2 
+health: 70
+allowedInPayloads: false 
+useUnitCap: false 
+playerControllable: false 
+physics: false 
+createWreck: false 
+createScorch: false
+weapons: [
+    {
+       shootCone: 140
+       mirror: false
+       shootOnDeath: true 
+       shootEffect: none 
+       x: 0
+       y: 0 
+       despawnHit: true 
+       
+        bullet: {
+       type: BombBulletType
+       splashDamageRadius: 50
+       splashDamage: 540 
+       instantDisappear: true 
+       killShooter: true 
+       hittable: false 
+       collidesAir: true 
+       hitEffect: [ 
+         { 
+           type: WaveEffect 
+           lifetime: 25 
+           sizeFrom: 10 
+           sizeTo: 50 
+           strokeFrom: 7 
+           strokeTo: 0 
+           colorFrom: ffca14
+           colorTo: ffo010
+
+
+         } 
+         ] 
+         } 
+     } 
+ ]

@@ -1,0 +1,106 @@
+name: M1A2 Abrams
+description: medium tank
+type: tank
+hitSize: 30
+omniMovement: false
+health: 550
+armor: 12
+speed: 0.6
+rotateSpeed: 1.2
+range: 270
+layerOffset: -1
+treadFrames: 18
+treadPullOffset: 8
+treadRects: [
+  {
+  x: 10
+  y: 8
+  width: 7
+  height: 8
+  }
+]
+envEnabled: 17
+envDisabled: 0
+outlineColor: "2d2f39"
+weapons: [
+ {
+ name: abrams-weapon
+ x: 0
+ y: 0.7
+    rotateSpeed: 1.8
+    shootY: 21
+    targetAir: false
+    targetGround: true
+    mirror: false
+    rotate: true
+    shootEffect: shootBig2
+    layerOffset: 2
+    ignoreRotation: true
+    followRotation: false
+    rotateShooting: false
+    reload: 90
+    recoil: 0.5
+    shootSound: artillery
+    parts: [
+        {
+          type: RegionPart
+          suffix: -barrel
+          under: false
+          y: 19.3
+          moves: [
+            {
+              type: PartMove
+              progress: recoil
+              y: -2
+            } 
+                ]
+        }
+           ]
+
+ bullet: {
+    type: ArtilleryBulletType
+    trailMult: 0.8 
+        trailColor: ff7f14ff
+        frontColor: ff9a00ff
+	backColor: ffa621ff
+    width: 8
+    height: 10
+    status: blasted
+    hitSize: 0.4
+    shootEffect: shootBig2
+    damage: 220
+    collides: false 
+    collidesTiles: true
+    collidesAir: false
+    splashDamageRadius: 20
+    splashDamage: 420
+    speed: 5
+    lifetime: 60
+    }
+   }
+   {
+ name: browning
+  x: 2.7
+  y: 1.6
+     rotateSpeed: 4
+     mirror: false
+     rotate: true
+     layerOffset: 3
+     ignoreRotation: false
+     followRotation: true
+     rotateShooting: false
+     shootEffect: shootSmall
+     reload: 15
+     recoil: 1
+     recoilTime: 30
+     shootSound: pew
+     ejectEffect: casing1
+
+ bullet: {
+    type: BasicBulletType
+    damage: 10
+    speed: 4
+    lifetime: 40
+  }
+ }
+]

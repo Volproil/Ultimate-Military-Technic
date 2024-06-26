@@ -1,0 +1,67 @@
+name: m107rocket
+type: missile
+controller: MissileAI
+loopSound: rocketM57
+flying: true
+speed: 3.0
+lifetime: 600
+hidden: true
+targetAir: false
+targetGround: true
+radius: 70
+envEnabled: 17 
+envDisabled: 0 
+outlineColor: 2d2f39
+engineColor: ff770e 
+trailColor: ffb114
+engineSize: 5.6
+engineOffset: 14
+rotateSpeed: 0.60 
+trailLength: 21
+missileAccelTime: 15 
+lowAltitude: true 
+fogRadius: 18
+health: 700
+allowedInPayloads: false 
+useUnitCap: false 
+playerControllable: false 
+physics: false 
+createWreck: false 
+createScorch: true
+weapons: [
+    {
+       shootCone: 140
+       mirror: false
+       shootOnDeath: true 
+       shootEffect: none 
+       x: 0
+       y: 0 
+       despawnHit: true 
+       
+        bullet: {
+       type: BombBulletType
+       splashDamageRadius: 100
+       splashDamage: 6000
+       instantDisappear: true 
+       killShooter: true 
+       hittable: false 
+       collidesAir: true 
+       status: none
+       pierce: true
+       hitEffect: [ 
+         { 
+           type: WaveEffect 
+           lifetime: 35 
+           sizeFrom: 50
+           sizeTo: 200
+           strokeFrom: 9 
+           strokeTo: 0 
+           colorFrom: ffca14
+           colorTo: ffo010
+
+
+         } 
+         ] 
+         } 
+     } 
+ ]

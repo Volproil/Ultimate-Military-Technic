@@ -1,0 +1,67 @@
+name: m57rocket
+type: missile
+controller: MissileAI
+loopSound: rocketM57
+flying: true
+speed: 3.0
+lifetime: 400
+hidden: true
+targetAir: false
+targetGround: true
+radius: 30
+envEnabled: 17 
+envDisabled: 0 
+outlineColor: 2d2f39
+engineColor: ff770e 
+trailColor: ffb114
+engineSize: 2.8 
+engineOffset: 7
+rotateSpeed: 0.60 
+trailLength: 21
+missileAccelTime: 15 
+lowAltitude: true 
+fogRadius: 9
+health: 100
+allowedInPayloads: false 
+useUnitCap: false 
+playerControllable: false 
+physics: false 
+createWreck: false 
+createScorch: true
+weapons: [
+    {
+       shootCone: 140
+       mirror: false
+       shootOnDeath: true 
+       shootEffect: none 
+       x: 0
+       y: 0 
+       despawnHit: true 
+       
+        bullet: {
+       type: BombBulletType
+       splashDamageRadius: 100
+       splashDamage: 1000
+       instantDisappear: true 
+       killShooter: true 
+       hittable: false 
+       collidesAir: true 
+       status: burning
+       pierce: true
+       hitEffect: [ 
+         { 
+           type: WaveEffect 
+           lifetime: 35 
+           sizeFrom: 20 
+           sizeTo: 70 
+           strokeFrom: 9 
+           strokeTo: 0 
+           colorFrom: ffca14
+           colorTo: ffo010
+
+
+         } 
+         ] 
+         } 
+     } 
+ ]

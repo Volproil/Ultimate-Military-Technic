@@ -1,0 +1,95 @@
+type: UnitFactory
+
+name: Tonk fabricator
+description: Produces 2nd to 3rd generation tanks
+
+health: 1500
+size: 3
+
+consumes: {
+  power: 2.2
+}
+
+plans: [
+  {
+    unit: abrams
+    time: 3300
+    requirements: [
+      copper/100
+      silicon/500
+      titanium/45
+    ]
+  }
+
+  {
+    unit: thunderbolt
+    time: 2200
+    requirements: [
+      silicon/325
+      plastanium/50
+      titanium/65
+    ]
+  }
+
+  {
+    unit: fpvdrone1
+    time: 2120
+    requirements: [
+      silicon/50
+      copper/10
+    ]
+  }
+
+  {
+unit: m164
+      time: 2400
+      requirements: [
+        silicon/30
+        graphite/15
+        titanium/10
+    ]
+  }
+  {
+      unit: m270mlrs
+    time: 2500
+    requirements: [
+      silicon/150
+      pyratite/100
+
+    ]
+  }
+   {
+      unit: m2bradley
+    time: 2500
+    requirements: [
+       copper/100
+      silicon/500
+      titanium/45
+
+    ]
+  }
+
+  {
+    unit: m113
+    time: 1500
+    requirements: [
+      silicon/30
+      lead/100
+    ]
+  }
+]
+
+requirements: [
+  silicon/450
+  titanium/500
+  lead/900
+]
+
+category: units
+research: {
+  parent: ground-factory
+  requirements: [
+    silicon/100
+    titanium/300
+  ]
+}

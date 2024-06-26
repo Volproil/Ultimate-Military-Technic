@@ -1,0 +1,87 @@
+name: M270 MLRS 
+description: excellent mobile multiple launch rocket system
+type: tank
+omniMovement: false
+hitSize: 24
+health: 500
+armor: 6
+speed: 1.0
+rotateSpeed: 1.3
+layerOffset: -1
+radius: 600
+fogRadius: 600
+treadPullOffset: 4
+treadRects: [
+{
+  x: -40
+  y: 10
+  width: 20
+  height: 20
+}
+]
+envEnabled: 14
+envDisabled: 2
+outlineColor: "2d2f39"
+weapons: [
+{
+name: m270mlrs-weapon
+ x: 0
+ y: -4.1
+    rotateSpeed: 1.5
+    shootX: 0
+    shootY: 13
+    targetAir: false
+    targetGround: true
+    mirror: false
+    rotate: true
+    layerOffset: 2
+    ignoreRotation: true
+    followRotation: false
+    rotateShooting: false
+    reload: 2200
+    shootSound: rocketM57Launch
+    shoot: {
+          type: ShootAlternate
+          shots: 2
+          shotDelay: 50
+          spread: 10
+}
+parts: [
+{
+          type: RegionPart
+          suffix: -l
+          under: true
+          y: 6
+          x: 5
+          moves: [
+            {
+              type: PartMove
+              progress: reload
+              y: 6.5
+            }
+         ]
+      }
+{
+          type: RegionPart
+          suffix: -r
+          under: true
+          y: 6
+          x: -5
+          moves: [
+            {
+              type: PartMove
+              progress: reload
+              y: 6.5
+            }
+         ]
+      }
+  ]
+bullet: {
+	  type: BasicBulletType
+	  lifetime: 1
+	  speed: 0
+	  damage: 0
+          spawnUnit: m57rocket
+        }
+}
+        ]

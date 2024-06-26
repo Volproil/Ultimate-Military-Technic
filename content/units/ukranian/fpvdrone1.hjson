@@ -1,0 +1,72 @@
+type: flying
+name: FPV drone kamikadze
+health: 40
+speed: 7
+hitSize: 1
+omniMovement: false
+outlineColor: 2d2f39
+flying: true
+layerOffset: -1
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: none
+    layerOffset: 1
+    range: -1
+    reload: 5
+    effectY: 0.5
+    effectX: 2
+    parentizeEffects: true
+    activeEffect: {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        mirror: true
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 1
+        region: military-techic-mod-fpvdrone1-motor-blade
+        layerOffset: 1
+        sizeFrom: 4
+        sizeTo: 4
+    }
+   }
+  ]
+weapons: [
+    {
+       shootCone: 140
+       mirror: false
+       shootOnDeath: true 
+       shootEffect: none 
+       x: 0
+       y: 0 
+       despawnHit: true 
+       
+        bullet: {
+       type: BombBulletType
+       splashDamageRadius: 50
+       splashDamage: 300
+       instantDisappear: true 
+       killShooter: true 
+       hittable: false 
+       collidesAir: true 
+       status: melting 
+       pierce: true
+       hitEffect: [ 
+         { 
+           type: WaveEffect 
+           lifetime: 35 
+           sizeFrom: 20 
+           sizeTo: 50 
+           strokeFrom: 9 
+           strokeTo: 3
+           colorFrom: ffca14
+           colorTo: ffo010
+
+
+         } 
+         ] 
+         } 
+     } 
+ ]

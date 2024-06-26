@@ -1,0 +1,44 @@
+name: PyroAmmoFactory
+type: GenericCrafter
+size: 2
+hasPower: true
+hasLiquid: false
+hasItems: true
+craftTime: 1020
+health: 240
+itemCapacity: 101
+consumes: {
+  power: 2.0
+  items: [
+    pyratite/100
+    artillery-shell/1
+  ]
+}
+outputItems: [
+  artillery-shell-pyro/1
+]
+requirements: [
+  lead/120
+  titanium/80
+  silicon/60
+]
+research: {
+  parent: kiln
+  requirements: [
+    lead/2200
+    silicon/1000
+    titanium/700
+  ]
+}
+category: crafting
+draw: [
+  {
+    type: DrawDefault
+  },
+  {
+    type: DrawRegion
+    suffix: "-top"
+    progress: true
+    heatColor: true
+  }
+]
