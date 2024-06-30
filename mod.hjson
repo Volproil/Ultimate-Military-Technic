@@ -1,8 +1,10 @@
-name: "Ultimate-Military-Technic-mod"
-displayName: " Ultimate Military Technic Mod"
-"author": "Volproil"
-description: "Mod add tanks, aircraft ,artillery , diesel generators  "
-version: "1.3.1"
-minGameVersion: "142"
-dependencies: []
-hidden: false
+{
+    "name": "Ultimate-Military-Technic-mod",
+    "displayName": "Ultimate Military Technic Mod",
+    "author": "Volproil",
+    "description": "Mod add tanks, aircraft, artillery, diesel generators",
+    "version": "1.3.1",
+    "minGameVersion": "142",
+    "dependencies": [],
+    "hidden": false
+}
