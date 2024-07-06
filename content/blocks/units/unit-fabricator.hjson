@@ -1,6 +1,6 @@
 type: UnitFactory
 
-name: Tonk fabricator
+name: Tank fabricator
 description: Produces 2nd to 3rd generation tanks
 
 health: 1500
