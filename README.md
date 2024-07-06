@@ -20,6 +20,8 @@ M113
 M164 excellent air defense          
 ![image](https://github.com/Volproil/Ultimate-Military-Technic-mod/assets/88111301/5d230a6f-61d7-44f1-b722-f49ea1a42cab) ![image](https://github.com/Volproil/Ultimate-Military-Technic-mod/assets/88111301/4f32c972-a001-48b9-86d7-5b61b5f60a99)
 
+M35-firetruck M35 Healer M35 cargo
+![image](https://github.com/Volproil/Ultimate-Military-Technic-mod/assets/88111301/1081d781-a388-4941-aee1-9332bbb8f06c)
 
 M2 Bradley          
 ![image](https://github.com/Volproil/Ultimate-Military-Technic-mod/assets/88111301/2d0a14aa-bb70-4614-b4d9-a97caf8e439e) ![image](https://github.com/Volproil/Ultimate-Military-Technic-mod/assets/88111301/da041785-47de-4871-b73c-1a937c66a760)
