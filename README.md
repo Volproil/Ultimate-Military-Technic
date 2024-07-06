@@ -15,6 +15,8 @@ M1A2 Abrams
 
 M113          
 ![image](https://github.com/Volproil/Ultimate-Military-Technic-mod/assets/88111301/a3a34897-b3bb-4254-be47-c19e1edf8775) ![image](https://github.com/Volproil/Ultimate-Military-Technic-mod/assets/88111301/36b42914-29cc-4384-b7c2-4fa7739158d2)
+M35 M35-firetruck M35-heal
+![image](https://github.com/Volproil/Ultimate-Military-Technic-mod/assets/88111301/62bbf796-5c41-44d3-92e5-69b88686cb2b)
 
 
 M164 excellent air defense          
