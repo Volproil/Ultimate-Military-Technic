@@ -1,8 +1,8 @@
 type: UnitFactory
 
 name: Tank fabricator
-description: Produces 2nd to 3rd generation tanks
-
+description: Produces tanks
+itemCapacity: 300
 health: 1500
 size: 3
 
@@ -11,16 +11,6 @@ consumes: {
 }
 
 plans: [
-  {
-    unit: abrams
-    time: 3300
-    requirements: [
-      copper/100
-      silicon/500
-      titanium/45
-    ]
-  }
-
   {
     unit: thunderbolt
     time: 2200
@@ -41,12 +31,12 @@ plans: [
   }
 
   {
-unit: m164
-      time: 2400
+unit: M163-VADS
+      time: 2000
       requirements: [
-        silicon/30
-        graphite/15
-        titanium/10
+      copper/100
+      silicon/80
+      lead/50
     ]
   }
   {
@@ -58,31 +48,32 @@ unit: m164
 
     ]
   }
-   {
-      unit: m2bradley
-    time: 2500
+    {
+      unit: ATGM-Vehicle
+    time: 2000
     requirements: [
-       copper/100
-      silicon/500
-      titanium/45
+     copper/100
+      silicon/90
+      graphite/10
 
     ]
   }
 
   {
     unit: m113
-    time: 1500
+    time: 1200
     requirements: [
-      silicon/30
-      lead/100
+    copper/70
+    silicon/30
+    lead/50
     ]
   }
 ]
 
 requirements: [
-  silicon/450
-  titanium/500
-  lead/900
+  silicon/100
+  lead/100
+  copper/300
 ]
 
 category: units

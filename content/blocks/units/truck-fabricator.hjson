@@ -17,7 +17,6 @@ plans: [
     requirements: [
       copper/800
       silicon/100
-      graphite/45
     ]
   }
 
@@ -28,7 +27,7 @@ plans: [
       copper/800
       silicon/200
       metaglass/50
-      titanium/45
+      lead/60
     ]
   }
 
@@ -39,6 +38,7 @@ plans: [
       copper/800
       silicon/100
       metaglass/100
+      titanium/50
     ]
   }
 

@@ -2,12 +2,12 @@ name: Towrocket
 type: missile
 controller: MissileAI
 flying: true
-speed: 4.5
+speed: 3
 maxRange: 4
 hidden: true
 targetAir: false
 targetGround: true
-lifetime: 160
+lifetime: 70
 radius: 10
 envEnabled: 17 
 envDisabled: 0 
@@ -38,11 +38,12 @@ weapons: [
        y: 0 
        despawnHit: true 
        despawnEffect: none
-       
+       targetAir: false
+       targetGround: true
         bullet: {
        type: BombBulletType
-       splashDamageRadius: 28
-       splashDamage: 325
+       splashDamageRadius: 40
+       splashDamage: 100
        instantDisappear: true
        killShooter: true 
        hittable: false 

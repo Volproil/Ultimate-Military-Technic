@@ -1,0 +1,86 @@
+{
+  type: tank,
+  name: M247 Sergeant York,
+  description: Powerful anti-aircraft tank with dual autocannons.,
+  hitSize: 24,
+  omniMovement: false,
+  health: 350,
+  armor: 10,
+  speed: 0.9,
+  rotateSpeed: 2.0,
+  range: 17,
+  treadPullOffset: 4,
+  treadRects: [
+    {
+      x: -40,
+      y: 8,
+      width: 1.5,
+      height: 2.5
+    }
+  ],
+  envEnabled: 14,
+  envDisabled: 2,
+  outlineColor: 2d2f39,
+  layerOffset: -1,
+
+  weapons: [
+    {
+      name: M247-weapon,
+      x: 0,
+      y: 0,
+      rotateSpeed: 2.5,
+      shootY: 17,
+      targetAir: true,
+      targetGround: false,
+      mirror: true,  // Включаем зеркальное отображение
+      rotate: true,
+      layerOffset: 2,
+      shots: 100,
+      shootEffect: SmallShot,
+      ignoreRotation: true,
+      followRotation: true,
+      targetAir: true,
+      targetGround: false,
+      rotateShooting: true,
+      reload: 8,
+      recoil: 0.2,
+      shootSound: shoot,
+      parts: [
+        {
+          type: RegionPart,
+          suffix: -barrel,
+          under: true,
+          x: -2,  // Левый ствол
+          y: 9.4,
+          moves: [
+            {
+              type: PartMove,
+              progress: recoil,
+              y: -1.5
+            }
+          ]
+        },
+        {
+          type: RegionPart,
+          suffix: -barrel,
+          under: true,
+          x: 2,  // Правый ствол
+          y: 9.4,
+          moves: [
+            {
+              type: PartMove,
+              progress: recoil,
+              y: -1.5
+            }
+          ]
+        }
+      ],
+      bullet: {
+        type: FlakBulletType,
+        damage: 25,
+        speed: 8,
+        lifetime: 20
+      }
+    }
+  ]
+}

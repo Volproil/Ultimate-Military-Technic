@@ -1,0 +1,79 @@
+{
+    type: "ItemTurret"
+    name: "anti-tank"
+    description: "-"
+    health: 2500
+    size: 3
+    recoilAmount: 5
+    reloadTime: 120
+    reload: 120
+    range: 300
+    ammoUseEffect: "casing3"
+    shootSound: "explosionbig"
+    targetAir: false
+    inaccuracy: 1
+    shots: 1
+    burst: 3
+    burstSpacing: 15  # Время между выстрелами в залпе (в тиках)
+    rotateSpeed: 0.8
+    ammoTypes: {
+        graphite: {
+            type: "BasicBulletType"  # Первый тип боеприпасов (графит)
+            damage: 158  # Урон для графита
+            speed: 5.0
+            lifetime: 70
+            width: 12
+            height: 12
+            shootEffect: "shootBig"
+            smokeEffect: "shootBigSmoke"
+            splashDamageRadius: 80
+            splashDamage: 158
+            hitEffect: {
+                type: "WaveEffect"
+                size: 40
+                lifetime: 60
+                color: [0.5, 0.5, 0.5, 1]
+            }
+            fogEffect: {
+                type: "WaveEffect"
+                sizeFrom: 0
+                sizeTo: 100
+                lifetime: 180
+                color: [0.3, 0.3, 0.3, 0.7]
+            }
+        },
+        thorium: {  # Второй тип боеприпасов (торий)
+            type: "BasicBulletType"
+            damage: 700  # Урон для тория
+            speed: 4.5  # Сниженная скорость для баланса
+            lifetime: 80
+            width: 14  # Более крупный снаряд
+            height: 14
+            shootEffect: "shootBig"
+            smokeEffect: "shootBigSmoke"
+            splashDamageRadius: 100  # Радиус взрыва увеличен для тория
+            splashDamage: 600  # Урон от взрыва
+            hitEffect: {
+                type: "WaveEffect"
+                size: 60  # Большой эффект при попадании
+                lifetime: 120
+                color: [0.7, 0.4, 0.1, 0.8]  # Красновато-оранжевый оттенок взрыва
+            }
+            fogEffect: {
+                type: "WaveEffect"
+                sizeFrom: 70
+                sizeTo: 150  # Более массивный туман
+                lifetime: 240  # Туман остаётся дольше на поле боя
+                color: [0.3, 0.3, 0.3, 0.7]
+            }
+        }
+    }
+    coolantMultiplier: 0.7
+    requirements: [
+        { item: "titanium", amount: 100 }
+        { item: "lead", amount: 80 }
+        { item: "silicon", amount: 50 }
+    ]
+    category: "turret"
+    research: "sniper"
+}
