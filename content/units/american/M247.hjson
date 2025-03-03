@@ -7,6 +7,8 @@
   health: 350,
   armor: 10,
   speed: 0.9,
+  targetAir: true,
+  targetGround: false,
   rotateSpeed: 2.0,
   range: 17,
   treadPullOffset: 4,
@@ -40,7 +42,7 @@
       ignoreRotation: true,
       followRotation: true,
       targetAir: true,
-      targetGround: false,
+      targetGround: false
       rotateShooting: true,
       reload: 8,
       recoil: 0.2,

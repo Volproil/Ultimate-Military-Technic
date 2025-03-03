@@ -44,7 +44,7 @@
         },
         thorium: {  # Второй тип боеприпасов (торий)
             type: "BasicBulletType"
-            damage: 700  # Урон для тория
+            damage: 300  # Урон для тория
             speed: 4.5  # Сниженная скорость для баланса
             lifetime: 80
             width: 14  # Более крупный снаряд
@@ -52,7 +52,7 @@
             shootEffect: "shootBig"
             smokeEffect: "shootBigSmoke"
             splashDamageRadius: 100  # Радиус взрыва увеличен для тория
-            splashDamage: 600  # Урон от взрыва
+            splashDamage: 250  # Урон от взрыва
             hitEffect: {
                 type: "WaveEffect"
                 size: 60  # Большой эффект при попадании

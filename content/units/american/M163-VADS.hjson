@@ -5,6 +5,8 @@ hitSize: 22
 omniMovement: false
 health: 100
 armor: 8
+targetAir: true
+targetGround: false
 speed: 1.3
 rotateSpeed: 2.4
 range: 13
