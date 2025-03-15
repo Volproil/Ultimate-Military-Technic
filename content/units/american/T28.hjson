@@ -1,0 +1,109 @@
+type: tank
+description: heavy tank
+name: T28
+hitSize: 50
+omniMovement: true  // Разрешить вращение на месте
+circleTarget: true
+health: 8000
+armor: 17
+targetAir: false
+speed: 0.5
+rotateSpeed: 1.3  // Увеличить скорость поворота корпуса
+range: 400
+treadPullOffset: 4
+treadRects: [
+  {
+    x: 3
+    y: 7
+    width: 1
+    height: 2
+  }
+]
+envEnabled: 14
+envDisabled: 2
+outlineColor: "2d2f39"
+layerOffset: -1
+
+weapons: [
+  {
+    name: T28-weapon
+    x: 0
+    y: 37
+    rotateSpeed: 0  // Орудие не вращается самостоятельно
+    shootY: 17
+    targetAir: false
+    targetGround: true
+    mirror: false
+    targetAir: false
+    targetGround: true
+    rotate: false  // Отключить вращение орудия
+    layerOffset: 2
+    shootEffect: SmallShot
+    ignoreRotation: false  // Орудие зависит от корпуса
+    followRotation: true  // Орудие следует за корпусом
+    rotateShooting: false  // Не вращаться при стрельбе
+    reload: 120
+    recoil: 0.2
+    shootSound: shoot
+    shootCone: 360  // Разрешить стрельбу в любом направлении (корпус будет поворачиваться)
+    bullet: {
+      type: BasicBulletType
+      trailMult: 0.8
+      trailColor: ff7f14ff
+      frontColor: ff9a00ff
+      backColor: ffa621ff
+      width: 9
+      height: 18
+      hitSize: 0.8
+      shootEffect: shootBig
+      damage: 500
+      splashDamageRadius: 100
+      splashDamage: 450
+      collides: true
+      collidesTiles: true
+      collidesAir: true
+      lifetime: 90
+      speed: 3
+      hitEffect: [
+         {
+           type: WaveEffect
+           lifetime: 40
+           sizeFrom: 80
+           sizeTo: 30
+           strokeFrom: 3
+           strokeTo: 0
+           colorFrom: ffca14
+           colorTo: ffo010
+
+
+         }
+         ]
+    }
+  },
+  {
+    name: M163-VADS-weapon
+    x: 4.0
+    y: 2.7
+    rotateSpeed: 10
+    mirror: false
+    rotate: true
+    layerOffset: 3
+    ignoreRotation: false
+    followRotation: true
+    rotateShooting: false
+    shootEffect: shootSmall
+    reload: 8
+    recoil: 1
+    recoilTime: 30
+    shootSound: pew
+    ejectEffect: casing1
+    targetAir: true
+    targetGround: false
+    bullet: {
+      type: FlakBulletType
+      damage: 5
+      speed: 10
+      lifetime: 13
+    }
+  }
+]

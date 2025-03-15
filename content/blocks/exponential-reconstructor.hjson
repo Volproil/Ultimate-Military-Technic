@@ -1,0 +1,9 @@
+upgrades: [
+    [zenith, antumbra],
+    [spiroct, arkyid],
+    [fortress, scepter],
+    [bryde, sei],
+    [mega, quad],
+    [quasar, vela],
+    [abrams, T28]
+]
