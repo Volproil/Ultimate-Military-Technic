@@ -2,9 +2,11 @@ type: tank
 description: heavy tank
 name: T28
 hitSize: 50
+targetAir: false
+targetGround: true
 omniMovement: true  // Разрешить вращение на месте
-circleTarget: true
-health: 8000
+circleTarget: false
+health: 7000
 armor: 17
 targetAir: false
 speed: 0.5
@@ -56,14 +58,14 @@ weapons: [
       height: 18
       hitSize: 0.8
       shootEffect: shootBig
-      damage: 500
+      damage: 400
       splashDamageRadius: 100
-      splashDamage: 450
+      splashDamage: 350
       collides: true
       collidesTiles: true
       collidesAir: true
       lifetime: 90
-      speed: 3
+      speed: 4
       hitEffect: [
          {
            type: WaveEffect
