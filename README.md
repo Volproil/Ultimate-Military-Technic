@@ -29,7 +29,7 @@ M270 MLRS
 
 | category   | T1         | T2         | T3         | T4         | T5         |
 |------------|------------|------------|------------|------------|------------|
-| Ячейка 1   | Ячейка 2  | Ячейка 3  | Ячейка 3  | Ячейка 3  | Ячейка 3  |
-| Ячейка 4   | Ячейка 5  | Ячейка 6  | Ячейка 3  | Ячейка 3  | Ячейка 3  |
-| Ячейка 7   | Ячейка 8  | Ячейка 9  | Ячейка 3  | Ячейка 3  | Ячейка 3  |
+| Ячейка 1   |![Unit1](https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/M163-VADS-full.png) | Ячейка 3  | Ячейка 3  | Ячейка 3  | Ячейка 3  |
+| Ячейка 4   | ![Unit5](https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m113-full.png)  | Ячейка 6  | Ячейка 3  | Ячейка 3  | Ячейка 3  |
+| Ячейка 7   | Ячейка 8  |  ![Unit9](https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/MIM-72-full.png)  | Ячейка 3  | Ячейка 3  | Ячейка 3  |
 
