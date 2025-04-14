@@ -12,7 +12,7 @@
 
 | **Special** |   |   |   |
 |-------------|---|---|---|
-| <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/ukrainian/fpvdrone1-full.png" width="120">   |  <img src="hhttps://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m35.png" width="120">  | Элемент 3 | Элемент 4 |
+| <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/ukrainian/fpvdrone1-full.png" width="120">   | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m35.png" width="120">   | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m35-heal-full.png" width="120">   |  <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m35-firetruck-full.png" width="120">  |
 
 
 
