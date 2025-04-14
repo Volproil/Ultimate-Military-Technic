@@ -2,6 +2,8 @@
 🇺🇦 Я використав RealTechicMod як основу та виправив помилки. Я також додав юнітів, артилерію, звичайні та запалювальні снаряди, а також заводи для них
 
 🇬🇧 I used RealTechicMod as a base and fixed bugs. I also added units, artillery, regular and pyro shells, and factories for them
+[![Version](https://img.shields.io/github/v/release/Volproil/Ultimate-Military-Technic?color=green&include_prereleases&label=Latest%20version&logo=github&logoColor=white&style=for-the-badge)](https://github.com/Volproil/Ultimate-Military-Technic/releases)
+[![Downloads](https://img.shields.io/github/downloads/Volproil/Ultimate-Military-Technic/total?color=red&label=Total%20Downloads&logo=github&logoColor=white&style=for-the-badge)](https://github.com/Volproil/Ultimate-Military-Technic/releases)
 
 
 | category       | T1                                                                 | T2         | T3         | T4         | T5         |
@@ -10,9 +12,9 @@
 | Tanks         | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m113-full.png" width="120"> | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m2bradley-full.png" width="120">   | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/abrams-full.png" width="120"> | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/T28-full.png" width="120"> | Indev   |
 | Rocket launcher      | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/ATGM-Vehicle-full.png" width="120">                                            | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/MIM-72-full.png" width="120"> | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m270mlrs-full.png" width="120">   | Indev  | Indev  |
 
-| **Special** |   |   |   |
-|-------------|---|---|---|
-| <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/ukrainian/fpvdrone1-full.png" width="120">   | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m35.png" width="120">   | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m35-heal-full.png" width="120">   |  <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m35-firetruck-full.png" width="120">  |
+| **Special** | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/ukrainian/fpvdrone1-full.png" width="120"> | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m35.png" width="120"> | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m35-heal-full.png" width="120"> | <img src="https://github.com/Volproil/Ultimate-Military-Technic/blob/main/sprites/units/american/m35-firetruck-full.png" width="120"> |
+|-------------|---|---|---|---|
+
 
 
 
