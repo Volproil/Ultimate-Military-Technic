@@ -2,11 +2,11 @@ name: M270 MLRS
 description: excellent mobile multiple launch rocket system
 type: tank
 omniMovement: false
-hitSize: 24
+hitSize: 17
 health: 500
 armor: 6
 speed: 1.0
-rotateSpeed: 1.3
+rotateSpeed: 2
 layerOffset: -1
 radius: 600
 fogRadius: 600

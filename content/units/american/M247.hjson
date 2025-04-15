@@ -2,7 +2,7 @@
   type: tank,
   name: M247 Sergeant York,
   description: Powerful anti-aircraft tank with dual autocannons.,
-  hitSize: 24,
+  hitSize: 17,
   omniMovement: false,
   health: 350,
   armor: 10,

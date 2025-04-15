@@ -1,12 +1,12 @@
 type: tank
 description: heavy tank
 name: M2 Bradley
-hitSize: 24
+hitSize: 17
 omniMovement: false
 health: 400
 armor: 8
 speed: 0.8
-rotateSpeed: 1.3
+rotateSpeed: 2
 range: 50
 treadPullOffset: 4
 treadRects: [

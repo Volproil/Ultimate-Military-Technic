@@ -1,7 +1,7 @@
 type: tank
 description: heavy tank
 name: T28
-hitSize: 50
+hitSize: 30
 targetAir: false
 targetGround: true
 omniMovement: true  // Разрешить вращение на месте

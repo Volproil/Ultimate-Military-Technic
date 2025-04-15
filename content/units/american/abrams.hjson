@@ -2,12 +2,12 @@
   type: tank
   description: heavy tank
   name: M1A2 Abrams
-  hitSize: 30
+  hitSize: 20
   omniMovement: false
   health: 550
   armor: 12
   speed: 0.6
-  rotateSpeed: 1.2
+  rotateSpeed: 2
   range: 270
   layerOffset: -1
   treadFrames: 18
