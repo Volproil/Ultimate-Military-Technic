@@ -50,8 +50,8 @@
           type: RegionPart,
           suffix: -barrelL,
           under: true,
-          x: -2,
-          y: 9.4,
+          x: -8,
+          y: 8,
           moves: [
             {
               type: PartMove,
@@ -64,8 +64,8 @@
           type: RegionPart,
           suffix: -barrelR,
           under: true,
-          x: 2,
-          y: 9.4,
+          x: 8,
+          y: 8,
           moves: [
             {
               type: PartMove,
@@ -84,17 +84,14 @@
     }
   ],
 
-  abilities: [
-    {
-      type: ShieldArcAbility,
-      radius: 30.0,
-      angle: 90.0,
-      rotation: 0.0,
-      regen: 1.5,
-      cooldown: 60.0,
-      max: 100.0,
-      color: accent,
-      sides: 20
-    }
-  ]
+  "abilities": [
+  {
+    "type": "ForceFieldAbility",
+    "radius": 30.0,
+    "regen": 1.5,
+    "cooldown": 60.0,
+    "max": 100.0,
+    "color": "accent"
+  }
+]
 }
