@@ -34,15 +34,13 @@
       shootY: 17,
       targetAir: true,
       targetGround: false,
-      mirror: true,  // Включаем зеркальное отображение
+      mirror: true,
       rotate: true,
       layerOffset: 2,
       shots: 100,
       shootEffect: SmallShot,
       ignoreRotation: true,
       followRotation: true,
-      targetAir: true,
-      targetGround: false
       rotateShooting: true,
       reload: 8,
       recoil: 0.2,
@@ -52,7 +50,7 @@
           type: RegionPart,
           suffix: -barrelL,
           under: true,
-          x: -2,  // Левый ствол
+          x: -2,
           y: 9.4,
           moves: [
             {
@@ -66,7 +64,7 @@
           type: RegionPart,
           suffix: -barrelR,
           under: true,
-          x: 2,  // Правый ствол
+          x: 2,
           y: 9.4,
           moves: [
             {
@@ -83,6 +81,20 @@
         speed: 8,
         lifetime: 20
       }
+    }
+  ],
+
+  abilities: [
+    {
+      type: ShieldArcAbility,
+      radius: 30.0,
+      angle: 90.0,
+      rotation: 0.0,
+      regen: 1.5,
+      cooldown: 60.0,
+      max: 100.0,
+      color: accent,
+      sides: 20
     }
   ]
 }
