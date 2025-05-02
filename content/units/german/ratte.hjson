@@ -1,0 +1,123 @@
+{
+  "type": "tank",
+  "name": "ratte",
+  "description": "Power T5 tank.",
+  "hitSize": 24,
+  "omniMovement": false,
+  "health": 450,
+  "armor": 10,
+  "speed": 0.9,
+  "targetAir": false,
+  "targetGround": true,
+  "rotateSpeed": 2.0,
+  "range": 27,
+  "treadPullOffset": 4,
+  "treadRects": [
+    {
+      "x": -10,
+      "y": 8,
+      "width": 6,
+      "height": 2.5
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "width": 6,
+      "height": 2.5
+    }
+  ],
+  "envEnabled": 14,
+  "envDisabled": 2,
+  "outlineColor": "2d2f39",
+  "layerOffset": -1,
+  "weapons": [
+    {
+      "name": "gepard-weapon",
+      "x": 0,
+      "y": 0,
+      "rotateSpeed": 2.5,
+      "shootX": -10,
+      "shootY": 17,
+      "targetAir": true,
+      "targetGround": false,
+      "mirror": true,
+      "rotate": true,
+      "layerOffset": 2,
+      "shots": 100,
+      "shootEffect": "SmallShot",
+      "ignoreRotation": true,
+      "followRotation": true,
+      "rotateShooting": true,
+      "reload": 4,
+      "recoil": 0.2,
+      "shootSound": "shoot",
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-barrelL",
+          "under": true,
+          "x": -10,
+          "y": 8,
+          "moves": [
+            {
+              "type": "PartMove",
+              "progress": "recoil",
+              "y": -1.5
+            }
+          ]
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-barrelR",
+          "under": true,
+          "x": 10,
+          "y": 8,
+          "moves": [
+            {
+              "type": "PartMove",
+              "progress": "recoil",
+              "y": -1.5
+            }
+          ]
+        }
+      ],
+      "bullet": {
+        "type": "FlakBulletType",
+        "damage": 25,
+        "speed": 8,
+        "lifetime": 30
+      }
+    },
+    {
+      "name": "browning",
+      "x": 2.7,
+      "y": 1.6,
+      "rotateSpeed": 4,
+      "mirror": false,
+      "rotate": true,
+      "layerOffset": 3,
+      "ignoreRotation": false,
+      "followRotation": true,
+      "rotateShooting": false,
+      "shootEffect": "shootSmall",
+      "reload": 15,
+      "recoil": 1,
+      "recoilTime": 30,
+      "shootSound": "pew",
+      "ejectEffect": "casing1",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 10,
+        "speed": 4,
+        "lifetime": 40
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "type": "UnitSpawnAbility",
+      "unit": "flare",
+      "spawnTime": 60
+    }
+  ]
+}
