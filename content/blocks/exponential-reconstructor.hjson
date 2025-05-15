@@ -5,5 +5,5 @@ upgrades: [
     [bryde, sei],
     [mega, quad],
     [quasar, vela],
-    [abrams, T28]
+    [abrams, T28],
 ]
