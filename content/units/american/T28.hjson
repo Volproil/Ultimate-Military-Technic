@@ -13,18 +13,19 @@ speed: 0.5
 rotateSpeed: 1.3  // Увеличить скорость поворота корпуса
 range: 400
 treadPullOffset: 4
-treadRects: [
-  {
-    x: 3
-    y: 7
-    width: 1
-    height: 2
-  }
-]
-envEnabled: 14
-envDisabled: 2
-outlineColor: "2d2f39"
-layerOffset: -1
+ "treadPullOffset": 4,
+  "treadRects": [
+    {
+      "x": 50,
+      "y": 100,
+      "width": 10,
+      "height": 20
+    }
+  ],
+  "envEnabled": 14,
+  "envDisabled": 2,
+  "outlineColor": "2d2f39",
+  "layerOffset": -1,
 
 weapons: [
   {
