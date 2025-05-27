@@ -12,16 +12,6 @@ consumes: {
 
 plans: [
   {
-    unit: thunderbolt
-    time: 2200
-    requirements: [
-      silicon/325
-      plastanium/50
-      titanium/65
-    ]
-  }
-
-  {
     unit: fpvdrone1
     time: 2120
     requirements: [
@@ -38,16 +28,7 @@ unit: M163-VADS
       silicon/80
       lead/50
     ]
-  }
-  {
-      unit: m270mlrs
-    time: 2500
-    requirements: [
-      silicon/150
-      pyratite/100
-
-    ]
-  }
+     }
     {
       unit: ATGM-Vehicle
     time: 2000
