@@ -243,7 +243,7 @@
     {
       "type": "UnitSpawnAbility",
       "unit": "flare",
-      "spawnTime": 60
+      "spawnTime": 1000
         "spawnY": -45,
     }
   ]
