@@ -1,17 +1,17 @@
 # The mod name as displayed in-game
-displayName: "1945 air force"
+displayName: "Ultimate Military Technic Mod- java"
 
 # The internal name of your mod
-name: "1945-air-force"
+name: "Ultimate-Military-Technic-mod-java"
 
 # Your name
-author: "Your Name"
+author: Volproil & AWA_TV
 
 # The fully qualified main class of the mod
-main: "mindustry.mod.Main"
+main: "mindustry.mod.main"
 
 # The mod description as seen in the mod dialog
-description: "1945 air force mod"
+ description: "Mod add tanks, aircraft, artillery, diesel generators and ships",
 
 # The mod version
 version: 1.0
