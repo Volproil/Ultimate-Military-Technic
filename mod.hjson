@@ -1,0 +1,26 @@
+# The mod name as displayed in-game
+displayName: "1945 air force"
+
+# The internal name of your mod
+name: "1945-air-force"
+
+# Your name
+author: "Your Name"
+
+# The fully qualified main class of the mod
+main: "mindustry.mod.Main"
+
+# The mod description as seen in the mod dialog
+description: "1945 air force mod"
+
+# The mod version
+version: 1.0
+
+# The minimum game build required to run this mod
+minGameVersion: 149
+
+#mark as client-side only mod
+hidden: false
+
+#this is a java mod
+java: true
