@@ -1,18 +1,18 @@
-package mindustrymod.content.units;
+package mindustry.content.units;
 
 import arc.graphics.Color;
 import mindustry.type.UnitType;
 import mindustry.type.unit.TankUnitType;
-import mindustry.entities.bullet.BasicBulletType;
-import mindustry.gen.Fx;
 import mindustry.gen.Sounds;
-import mindustry.entities.part.Tread;
 import mindustry.type.Weapon;
-import mindustry.type.env.Env;
+import mindustry.content.Fx;
+import mindustry.world.meta.Env;
+import mindustry.entities.bullet.BasicBulletType;
+import mindustry.entities.pattern.ShootSpread;
 
 public class M113 {
-    public static UnitType create() {
-        return new TankUnitType("M113") {{
+    public static UnitType createM113() {
+        return new TankUnitType("m113") {{
             description = "light tank";
             hitSize = 11f;
             omniMovement = false;
@@ -21,16 +21,19 @@ public class M113 {
             speed = 1.3f;
             rotateSpeed = 2.6f;
             range = 23f;
-            treadPullOffset = 3f;
             outlineColor = Color.valueOf("2d2f39");
-            layerOffset = -1f;
-
             envEnabled = Env.terrestrial | Env.space;
-            envDisabled = Env.deep;
-
-            treadRects = new Tread.TreadRect[]{
-                new Tread.TreadRect(-35f, 7f, 1f, 2f)
-            };
+            envDisabled = Env.underwater;
+            
+            // Tank configuration
+            speed = 1.3f;
+            rotateSpeed = 2.6f;
+            health = 80f;
+            armor = 3f;
+            hitSize = 11f;
+            flying = false;
+            omniMovement = false;
+            rotateMoveFirst = true;
 
             weapons.add(new Weapon("browning") {{
                 x = 2.7f;
@@ -38,12 +41,11 @@ public class M113 {
                 rotate = true;
                 mirror = false;
                 rotateSpeed = 7f;
-                layerOffset = 3f;
                 ignoreRotation = false;
-                followRotation = true;
-                rotateShooting = false;
-
-                shootEffect = Fx.shootSmall;
+                
+                shoot = new ShootSpread();
+                ((ShootSpread)shoot).spread = 2f;
+                shoot.shots = 1;
                 ejectEffect = Fx.casing1;
                 shootSound = Sounds.pew;
 
@@ -51,8 +53,18 @@ public class M113 {
                 recoil = 1f;
                 recoilTime = 30f;
 
-                bullet = new BasicBulletType(7f, 23) {{
-                    lifetime = 23f;
+                bullet = new BasicBulletType() {{
+                    width = 7f;
+                    height = 9f;
+                    lifetime = 60f;
+                    speed = 3f;
+                    damage = 23f;
+                    hitSize = 4f;
+                    knockback = 0.5f;
+                    frontColor = Color.valueOf("ffc665");
+                    backColor = Color.valueOf("ff9632");
+                    shootEffect = Fx.shootSmall;
+                    smokeEffect = Fx.shootSmallSmoke;
                 }};
             }});
         }};

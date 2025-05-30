@@ -1,6 +1,6 @@
-package mindustrymod;
+package mindustry.mod;
 
-import mindustry.mod.*;
+import mindustry.content.ModContent;
 
 public class MyMod extends Mod {
     public MyMod() {
@@ -9,6 +9,6 @@ public class MyMod extends Mod {
 
     @Override
     public void loadContent() {
-        mindustrymod.content.ModContent.load();
+        ModContent.load();
     }
 }
