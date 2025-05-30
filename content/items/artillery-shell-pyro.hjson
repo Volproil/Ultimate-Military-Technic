@@ -1,9 +1,0 @@
-{
-  type: "Item",
-  name: "artillery-shell-pyro",
-  description: "A powerful artillery shell used for long-range bombardment.",
-  color: "ff795e",
-  hardness: 3,
-  explosiveness: 1.5,
-  burning: 150
-}
