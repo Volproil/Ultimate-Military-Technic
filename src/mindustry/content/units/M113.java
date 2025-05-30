@@ -4,6 +4,7 @@ import arc.graphics.Color;
 import mindustry.type.UnitType;
 import mindustry.type.unit.TankUnitType;
 import mindustry.gen.Sounds;
+import mindustry.gen.UnitEntity;
 import mindustry.type.Weapon;
 import mindustry.content.Fx;
 import mindustry.world.meta.Env;
@@ -34,6 +35,8 @@ public class M113 {
             flying = false;
             omniMovement = false;
             rotateMoveFirst = true;
+
+            constructor = UnitEntity::create;
 
             weapons.add(new Weapon("browning") {{
                 x = 2.7f;

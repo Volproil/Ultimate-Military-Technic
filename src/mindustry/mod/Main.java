@@ -2,8 +2,8 @@ package mindustry.mod;
 
 import mindustry.content.ModContent;
 
-public class MyMod extends Mod {
-    public MyMod() {
+public class Main extends Mod {
+    public Main() {
         System.out.println("MyMod loaded!");
     }
 

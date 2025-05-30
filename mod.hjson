@@ -8,7 +8,7 @@ name: "Ultimate-Military-Technic-mod-java"
 author: Volproil & AWA_TV
 
 # The fully qualified main class of the mod
-main: "mindustry.mod.main"
+main: "mindustry.mod.Main"
 
 # The mod description as seen in the mod dialog
  description: "Mod add tanks, aircraft, artillery, diesel generators and ships",
