@@ -38,7 +38,7 @@ public class M113 {
 
             constructor = UnitEntity::create;
 
-            weapons.add(new Weapon("browning") {{
+            weapons.add(new Weapon("umt-java-browning") {{
                 x = 2.7f;
                 y = 2.7f;
                 rotate = true;
