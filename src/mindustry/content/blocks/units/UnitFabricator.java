@@ -5,7 +5,7 @@ import mindustry.type.ItemStack;
 import mindustry.world.blocks.units.UnitFactory;
 import mindustry.content.Items;
 
-public class MyBlocks {
+public class UnitFabricator {
     public static UnitFactory tankFabricator;
 
     public static void load() {
@@ -22,7 +22,7 @@ public class MyBlocks {
 
             // План 1: FPV Kamikaze Drone
             plans.add(new UnitPlan(
-                MyUnits.fpvdrone1,
+                mindustry.content.MyUnits.fpvdrone1,
                 1500,
                 ItemStack.with(
                     Items.copper, 80,
@@ -33,7 +33,7 @@ public class MyBlocks {
 
             // План 2: ATGM Vehicle
             plans.add(new UnitPlan(
-                MyUnits.ATGMVehicle,
+                mindustry.content.MyUnits.ATGMVehicle,
                 2400,
                 ItemStack.with(
                     Items.copper, 120,
@@ -44,7 +44,7 @@ public class MyBlocks {
 
             // План 3: M113 APC
             plans.add(new UnitPlan(
-                MyUnits.M113,
+                mindustry.content.MyUnits.M113,
                 2100,
                 ItemStack.with(
                     Items.lead, 150,
