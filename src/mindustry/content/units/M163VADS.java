@@ -12,7 +12,7 @@ import mindustry.world.meta.Env;
 
 public class M163VADS {
     public static UnitType createM163VADS() {
-        return new TankUnitType("M163-VADS") {{
+        return new TankUnitType("M163VADS") {{
             description = "Excellent air defense.";
             hitSize = 15f;
             health = 100f;
