@@ -51,6 +51,11 @@ public class ATGMVehicle {
 
                bullet = new MissileBulletType() {{
                     speed = 3f;
+                    collides = true;
+                    collidesTiles = true;
+                    collidesAir = false; // Только по наземным целям
+                    collidesGround = true;
+                    pierce = false; // Не проходить сквозь цели
                     hitSize = 10f;
                   //  controller = u -> new MissileAI();
                     width = 7f;
@@ -82,10 +87,10 @@ public class ATGMVehicle {
         hitEffect.colorTo = Color.valueOf("ff0010");
         
         bullet.hitEffect = hitEffect;
-                    homingPower = 0.1f;
+                    homingPower = 0.8f;
                     weaveScale = 5f;
                     weaveMag = 2f;
-                    homingRange = 50f;
+                    homingRange = 80f;
                 }};
             }});
         }};
