@@ -27,8 +27,8 @@ cp "$JAR_PATH" "$MODS_DIR" || { echo "❌ Не удалось скопирова
 echo "🧹 Удаляем папку build..."
 rm -rf "$BUILD_DIR" || { echo "⚠️ Не удалось удалить build-папку"; exit 1; }
 
-echo "🚀 Запускаем Mindustry..."
-"$MINDUSTRY_PATH" & disown
+echo "🚀 Mindustry запускается..."
+"$MINDUSTRY_PATH" &
 
 echo "✅ Мод $JAR_NAME обновлён и Mindustry запущен!"
 echo "$(date '+%Y-%m-%d %H:%M:%S')"
