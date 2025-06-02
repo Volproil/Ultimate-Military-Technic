@@ -55,7 +55,7 @@ public class ATGMVehicle {
                     shootEffect = Fx.shootSmall;
                     smokeEffect = Fx.shootSmallSmoke;
 
-                    despawnUnit = mindustry.content.MyUnits.M113;
+                    despawnUnit = mindustry.content.MyUnits.towrocket;
                     despawnUnitChance = 1.0f;
                     despawnUnitCount = 1;
                     despawnUnitRadius = 0.1f;
