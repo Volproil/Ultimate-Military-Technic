@@ -1,4 +1,5 @@
 package mindustry.content;
+import mindustry.content.units.M163VADS;
 import mindustry.type.UnitType;
 
 public class MyUnits {
@@ -8,6 +9,7 @@ public class MyUnits {
     public static UnitType ATGMVehicle;
     public static UnitType towrocket;
     public static UnitType MIM72;
+    public static UnitType M163VADS;
 
     public static void load() {
         t1ship = mindustry.content.units.t1ship.createUnit();
@@ -16,6 +18,7 @@ public class MyUnits {
         ATGMVehicle = mindustry.content.units.ATGMVehicle.createATGMVehicle();
         towrocket = mindustry.content.units.towrocket.createtowrocket();
         MIM72 = mindustry.content.units.MIM72.createMIM72();
+        M163VADS = mindustry.content.units.M163VADS.createM163VADS();
     }
 }
 
