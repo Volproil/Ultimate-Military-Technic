@@ -10,7 +10,7 @@ import mindustry.type.UnitType;
 import mindustry.type.Weapon;
 import mindustry.type.unit.TankUnitType;
 import mindustry.world.meta.Env;
-
+//TODO Исправить отображение башни и -barrrel.
 public class M2Bradley {
     public static UnitType createM2Bradley() {
         return new TankUnitType("M2Bradley") {{
