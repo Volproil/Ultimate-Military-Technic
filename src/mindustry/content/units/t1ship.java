@@ -3,13 +3,13 @@ package mindustry.content.units;
 import arc.graphics.Color;
 import mindustry.type.UnitType;
 import mindustry.gen.UnitEntity;
+import mindustry.gen.UnitWaterMove;
 import mindustry.type.Weapon;
 import mindustry.world.meta.Env;
 import mindustry.content.StatusEffects;
 import mindustry.entities.bullet.BasicBulletType;
 
 
-//TODO Заставить нормально плавать.
 public class t1ship {
     public static UnitType createUnit() {
         return new UnitType("t1ship") {
@@ -66,7 +66,7 @@ public class t1ship {
 
                 immunities.add(StatusEffects.wet);
 
-                constructor = UnitEntity::create;
+                constructor = UnitWaterMove::create;
 
                 weapons.add(new Weapon("umt-java-t1turret") {
                     {
