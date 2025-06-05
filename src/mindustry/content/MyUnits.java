@@ -12,6 +12,7 @@ public class MyUnits {
     public static UnitType M163VADS;
     public static UnitType m2bradley;
     public static UnitType abrams;
+    public static UnitType M247SergeantYork;
 
     public static void load() {
         t1ship = mindustry.content.units.t1ship.createUnit();
@@ -23,6 +24,7 @@ public class MyUnits {
         M163VADS = mindustry.content.units.M163VADS.createM163VADS();
         m2bradley = mindustry.content.units.M2Bradley.createM2Bradley();
         abrams = mindustry.content.units.abrams.createabrams();
+        M247SergeantYork = mindustry.content.units.M247SergeantYork.createM247SergeantYork();
     }
 }
 
