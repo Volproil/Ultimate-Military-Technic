@@ -16,6 +16,7 @@ public class MyUnits {
     public static UnitType M247SergeantYork;
     public static UnitType T28;
     public static UnitType Gepard;
+    public static UnitType Ratte;
 
     public static void load() {
         t1ship = mindustry.content.units.t1ship.createUnit();
@@ -30,6 +31,7 @@ public class MyUnits {
         M247SergeantYork = mindustry.content.units.M247SergeantYork.createM247SergeantYork();
         T28 = mindustry.content.units.T28.createT28();
         Gepard = mindustry.content.units.Gepard.createGepard();
+        Ratte  = mindustry.content.units.Ratte.createRatte();
     }
 }
 
