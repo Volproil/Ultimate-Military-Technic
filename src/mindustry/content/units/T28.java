@@ -92,7 +92,7 @@ public class T28 {
             }});
 
             // Оружие 2: Автопушка M163-VADS
-            weapons.add(new Weapon("M163-VADS-weapon") {{
+            weapons.add(new Weapon("umt-java-M163-VADS-weapon") {{
                 x = 4.0f;
                 y = 2.7f;
                 rotateSpeed = 10f;
