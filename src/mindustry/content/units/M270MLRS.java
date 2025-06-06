@@ -82,7 +82,7 @@ public class M270MLRS {
 
                     trailColor = Color.valueOf("ffb114");
                     trailLength = 21;
-                    homingPower = 0.8f; // Как в ATGMVehicle
+                    homingPower = 2.0f; // Как в ATGMVehicle
                     homingDelay = 15f; // Сохраняем из M270MLRS
                     weaveScale = 5f; // Как в ATGMVehicle
                     weaveMag = 2f; // Как в ATGMVehicle
