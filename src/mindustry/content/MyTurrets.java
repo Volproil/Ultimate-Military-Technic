@@ -1,6 +1,6 @@
 package mindustry.content;
 
-import arc.graphics.Color;
+import arc.graphics.Color; // Может быть не нужен, если цвета эффектов не используются
 import mindustry.content.Blocks;
 import mindustry.content.Fx;
 import mindustry.content.Items;
@@ -10,7 +10,6 @@ import mindustry.entities.effect.WaveEffect;
 import mindustry.type.Category;
 import mindustry.world.blocks.defense.turrets.ItemTurret;
 import mindustry.world.meta.BuildVisibility;
-import mindustry.world.draw.DrawTurret;
 import static mindustry.type.ItemStack.with;
 
 
@@ -19,63 +18,83 @@ public class MyTurrets {
 
     public static void load() {
         antiTank = new ItemTurret("antitank"){{
-            description = "A powerful anti-tank turret.";
-            health = 2500;
-            size = 3;
-            // УДАЛЕНО/ЗАКОММЕНТИРОВАНО: recoilAmount, shots, burst, burstSpacing
-            // Если они вызовут проблемы, мы вернемся к ним индивидуально.
+            this.description = "A powerful anti-tank turret.";
+            this.health = 2500;
+            this.size = 3; // ИСПРАВЛЕНО: Установлен размер 3x3, как в HJSON
 
-            reload = 120f;
-            range = 300f;
-            ammoUseEffect = Fx.casing3;
-            shootSound = Sounds.explosionbig;
-            targetAir = false;
-            inaccuracy = 1f;
-            rotateSpeed = 0.8f;
-            coolantMultiplier = 0.7f;
+            // УДАЛЕНЫ поля, которые вызывали ошибку "cannot find symbol"
+            // this.recoilAmount = 5f;
+            // this.shots = 1;
+            // this.burst = 3;
+            // this.burstSpacing = 15f;
 
-            drawer = new DrawTurret(); 
+            this.reload = 120f;
+            this.range = 300f;
+            this.ammoUseEffect = Fx.casing3;
+            this.shootSound = Sounds.explosionbig;
+            this.targetAir = false;
+            this.inaccuracy = 1f;
+            this.rotateSpeed = 0.8f;
+            this.coolantMultiplier = 0.7f;
 
             // Типы боеприпасов
-            ammo(
+            this.ammo(
                 Items.graphite, new BasicBulletType(){{
-                    damage = 158f;
-                    speed = 5.0f;
-                    lifetime = 70f;
-                    width = 12f;
-                    height = 12f;
-                    shootEffect = Fx.shootBig;
-                    smokeEffect = Fx.shootBigSmoke;
-                    splashDamageRadius = 80f;
-                    splashDamage = 158f;
-                    hitEffect = new WaveEffect(){{
-                        size = 40; 
-                        lifetime = 60f;
-                        // color = new Color(0.5f, 0.5f, 0.5f, 1f); // УДАЛЕНО/ЗАКОММЕНТИРОВАНО
+                    this.damage = 158f;
+                    this.speed = 5.0f;
+                    this.lifetime = 70f;
+                    this.width = 12f;
+                    this.height = 12f;
+                    this.shootEffect = Fx.shootBig;
+                    this.smokeEffect = Fx.shootBigSmoke;
+                    this.splashDamageRadius = 80f;
+                    this.splashDamage = 158f;
+                    this.collidesGround = true; // Добавлено для наземных целей
+                    this.hitEffect = new WaveEffect(){{
+                        this.sizeFrom = 0; // ИСПРАВЛЕНО: используем sizeFrom
+                        this.sizeTo = 40;  // ИСПРАВЛЕНО: используем sizeTo
+                        this.lifetime = 60f;
+                        // this.color = new Color(0.5f, 0.5f, 0.5f, 1f); // УДАЛЕНО: поле color
+                    }};
+                    // Добавляем fogEffect (аналог despawnEffect в Java)
+                    this.despawnEffect = new WaveEffect(){{
+                        this.sizeFrom = 0;
+                        this.sizeTo = 100;
+                        this.lifetime = 180f;
+                        // this.color = new Color(0.3f, 0.3f, 0.3f, 0.7f); // УДАЛЕНО: поле color
                     }};
                 }},
                 Items.thorium, new BasicBulletType(){{
-                    damage = 300f;
-                    speed = 4.5f;
-                    lifetime = 80f;
-                    width = 14f;
-                    height = 14f;
-                    shootEffect = Fx.shootBig;
-                    smokeEffect = Fx.shootBigSmoke;
-                    splashDamageRadius = 100f;
-                    splashDamage = 250f;
-                    hitEffect = new WaveEffect(){{
-                        size = 60; 
-                        lifetime = 120f;
-                        // color = new Color(0.7f, 0.4f, 0.1f, 0.8f); // УДАЛЕНО/ЗАКОММЕНТИРОВАНО
+                    this.damage = 300f;
+                    this.speed = 4.5f;
+                    this.lifetime = 80f;
+                    this.width = 14f;
+                    this.height = 14f;
+                    this.shootEffect = Fx.shootBig;
+                    this.smokeEffect = Fx.shootBigSmoke;
+                    this.splashDamageRadius = 100f;
+                    this.splashDamage = 250f;
+                    this.collidesGround = true; // Добавлено для наземных целей
+                    this.hitEffect = new WaveEffect(){{
+                        this.sizeFrom = 0; // ИСПРАВЛЕНО: используем sizeFrom
+                        this.sizeTo = 60;  // ИСПРАВЛЕНО: используем sizeTo
+                        this.lifetime = 120f;
+                        // this.color = new Color(0.7f, 0.4f, 0.1f, 0.8f); // УДАЛЕНО: поле color
+                    }};
+                    // Добавляем fogEffect (аналог despawnEffect в Java)
+                    this.despawnEffect = new WaveEffect(){{
+                        this.sizeFrom = 70;
+                        this.sizeTo = 150;
+                        this.lifetime = 240f;
+                        // this.color = new Color(0.3f, 0.3f, 0.3f, 0.7f); // УДАЛЕНО: поле color
                     }};
                 }}
             );
 
             // Требования к ресурсам
-            requirements(Category.turret, BuildVisibility.shown, with(Items.titanium, 100, Items.lead, 80, Items.silicon, 50));
-            category = Category.turret;
-            // research = Blocks.sniper; // УДАЛЕНО/ЗАКОММЕНТИРОВАНО
+            this.requirements(Category.turret, BuildVisibility.shown, with(Items.titanium, 100, Items.lead, 80, Items.silicon, 50));
+            this.category = Category.turret;
+            // this.research = Blocks.sniper; // УДАЛЕНО: поле research
         }};
     }
 }
