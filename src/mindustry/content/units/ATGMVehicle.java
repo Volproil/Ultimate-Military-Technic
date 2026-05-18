@@ -43,7 +43,7 @@ public class ATGMVehicle {
                 ((ShootSpread)shoot).spread = 2f;
                 shoot.shots = 1;
                 ejectEffect = Fx.casing1;
-                shootSound = Sounds.pew;
+                shootSound = Sounds.shoot;
 
                 reload = 13f;
                 recoil = 1f;

@@ -37,7 +37,7 @@ public class MyTurrets {
             this.reload = 120f;
             this.range = 300f;
             this.ammoUseEffect = Fx.casing3;
-            this.shootSound = Sounds.explosionbig;
+            this.shootSound = Sounds.shoot;
             this.targetAir = false;
             this.inaccuracy = 1f;
             this.rotateSpeed = 0.8f;
@@ -103,7 +103,7 @@ public class MyTurrets {
             this.reload = 1080f;
             this.range = 1500f;
             this.ammoUseEffect = Fx.casing3;
-            this.shootSound = Sounds.explosionbig;
+            this.shootSound = Sounds.shoot;
             this.targetAir = false;
             this.inaccuracy = 5.0f;
             this.rotateSpeed = 0.1f;

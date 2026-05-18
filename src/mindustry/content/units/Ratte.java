@@ -66,7 +66,7 @@ public class Ratte {
 
                 reload = 80f;
                 recoil = 0.1f;
-                shootSound = Sounds.shootBig;
+                shootSound = Sounds.shoot; // shootBig
 
                 // Эффект попадания (hitEffect) - УДАЛЕНО для устранения ошибки компиляции
                 /*
@@ -186,7 +186,7 @@ public class Ratte {
                 rotateSpeed = 3.0f;
                 reload = 15f;
                 recoil = 0.05f;
-                shootSound = Sounds.pew;
+                shootSound = Sounds.shoot;
                 // shootEffect = Fx.shootSmall; // Удалено по запросу пользователя
 
                 bullet = new BasicBulletType() {{
@@ -208,7 +208,7 @@ public class Ratte {
                 rotateSpeed = 3.0f;
                 reload = 15f;
                 recoil = 0.05f;
-                shootSound = Sounds.pew;
+                shootSound = Sounds.shoot;
                 // shootEffect = Fx.shootSmall; // Удалено по запросу пользователя
 
                 bullet = new BasicBulletType() {{

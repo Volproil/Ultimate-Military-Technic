@@ -85,7 +85,7 @@ public class MIM72 {
                     ignoreRotation = true;
                     reload = 310f;
                     recoil = 1.7f;
-                    shootSound = Sounds.missileSmall;
+                    shootSound = Sounds.shoot; // missileSmall
                     layerOffset = 1f;
                     bullet = missile;
                 }});

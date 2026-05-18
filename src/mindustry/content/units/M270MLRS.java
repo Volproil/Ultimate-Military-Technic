@@ -92,7 +92,7 @@ public class M270MLRS {
                     // Эти свойства закомментированы для компиляции из-за постоянных ошибок "cannot find symbol".
                     // Если вы хотите использовать их, ВАМ НЕОБХОДИМО обновить ваш build.gradle,
                     // чтобы он соответствовал версии вашей игры Mindustry.
-                    // loopSound = Sounds.none;
+                    // loopSound = Sounds.shoot;
                     // engineColor = Color.valueOf("ff770e");
                     // engineSize = 2.8f;
                     // rotateSpeed = 0.60f;

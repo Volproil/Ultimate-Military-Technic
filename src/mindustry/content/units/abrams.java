@@ -60,7 +60,7 @@ public class abrams {
 
                 reload = 90f;
                 recoil = 0.5f;
-                shootSound = Sounds.artillery;
+                shootSound = Sounds.shoot; // artillery
 
                 // Части оружия (ствол)
                 parts.add(new RegionPart("-barrel") {{
@@ -102,7 +102,7 @@ public class abrams {
                 reload = 15f;
                 recoil = 1f;
                 recoilTime = 30f; // float
-                shootSound = Sounds.pew;
+                shootSound = Sounds.shoot;
                 ejectEffect = Fx.casing1;
 
                 // Тип пули для пулемета

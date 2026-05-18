@@ -104,7 +104,7 @@ public class T28 {
                 reload = 8f;
                 recoil = 1f;
                 recoilTime = 30f;
-                shootSound = Sounds.pew;
+                shootSound = Sounds.shoot;
                 ejectEffect = Fx.casing1;
                 targetAir = true;
                 targetGround = false;
