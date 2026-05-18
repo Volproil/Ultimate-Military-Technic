@@ -17,7 +17,7 @@ main: "mindustry.mod.Main"
 version: 1.0
 
 # The minimum game build required to run this mod
-minGameVersion: 149
+minGameVersion: 154
 
 #mark as client-side only mod
 hidden: false
