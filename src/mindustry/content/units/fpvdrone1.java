@@ -49,7 +49,7 @@ public class fpvdrone1 {
                 //despawnOnHit = true;
 
                 bullet = new BombBulletType() {{
-                    splashDamageRadius = 30f;
+                    splashDamageRadius = 45f;
                     splashDamage = 100f;
                     instantDisappear = true;
                     killShooter = true;
