@@ -50,6 +50,18 @@ public class UnitFabricator {
                     Items.lead, 150,
                     Items.copper, 100,
                     Items.silicon, 70
+
+                )
+            ));
+            // План 3: M163VADS
+            plans.add(new UnitPlan(
+                mindustry.content.MyUnits.M163VADS,
+                2100,
+                ItemStack.with(
+                    Items.lead, 150,
+                    Items.copper, 100,
+                    Items.silicon, 70
+
                 )
             ));
 

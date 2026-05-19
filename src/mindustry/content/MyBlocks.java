@@ -1,5 +1,4 @@
 package mindustry.content;
-
 import mindustry.world.blocks.units.UnitFactory;
 import mindustry.content.MyTurrets; // <--- ИСПРАВЛЕННЫЙ ИМПОРТ: MyTurrets теперь в том же пакете
 
@@ -18,7 +17,7 @@ public class MyBlocks {
         
         factory.load();
         unitFabricator.load();
-        
+
         // Загрузка ваших кастомных турелей
         MyTurrets.load(); 
     }
