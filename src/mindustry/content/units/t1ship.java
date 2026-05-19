@@ -5,7 +5,7 @@ import mindustry.type.UnitType;
 import mindustry.gen.UnitWaterMove;
 import mindustry.type.Weapon;
 import mindustry.content.StatusEffects;
-import mindustry.entities.abilities.SpawnDeathAbility;
+//import mindustry.entities.abilities.SpawnDeathAbility;
 import mindustry.entities.bullet.BasicBulletType;
 
 //TODO Улучшить вид снарядов.
@@ -20,9 +20,9 @@ public class t1ship {
                 allowLegStep = false;
                 description = "T1 Ship";
                 health = 300;
-                speed = 1.5f;
+                speed = 1.15f;
                 rotateSpeed = 1.8f;
-                range = 35;
+                range = 21;
                 flying = false;
                 rotateMoveFirst = false;
                 hitSize = 11;
@@ -32,7 +32,7 @@ public class t1ship {
                 faceTarget = false;
                 physics = true;
                 bounded = true;
-                outlineColor = Color.valueOf("5e9ed6");
+                outlineColor = Color.valueOf("575767ff");
                 engineOffset = 5.5f;
                 engineSize = 2.5f;
                 immunities.add(StatusEffects.wet);
@@ -42,21 +42,21 @@ public class t1ship {
                 weapons.add(new Weapon("umt-java-t1turret") {
                     {
                         x = 0;
-                        y = -2;
+                        y = -6;
                         rotate = true;
-                        rotateSpeed = 6;
-                        reload = 60;
-                        outlineColor = Color.valueOf("00000000");
-                        recoil = 0;
-                        recoilTime = 0;
+                        rotateSpeed = 4;
+                        reload = 180;
+                        outlineColor = Color.valueOf("575767ff");
+                        recoil = 2;
+                        recoilTime = 30;
                         omniMovement = false;
                         ignoreRotation = false;
 
                         bullet = new BasicBulletType() {
                             {
                                 speed = 4;
-                                damage = 15;
-                                lifetime = 60;
+                                damage = 22;
+                                lifetime = 55;
                                 width = 24;
                                 height = 24;
                                 lightRadius = 22;
@@ -68,12 +68,6 @@ public class t1ship {
                                 homingRange = 100;
                             }
                         };
-                    }
-                });
-                UnitType broken = mindustry.content.MyUnits.t1shipBroken;
-                abilities.add(new SpawnDeathAbility(broken, 1, 0){
-                    {
-                        faceOutwards = false;
                     }
                 });
                 load();
