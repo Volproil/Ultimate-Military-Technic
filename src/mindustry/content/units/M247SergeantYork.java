@@ -8,6 +8,7 @@ import mindustry.entities.bullet.FlakBulletType; // Импорт FlakBulletType
 import mindustry.entities.part.RegionPart;
 import mindustry.gen.Sounds;
 import mindustry.gen.UnitEntity;
+import mindustry.gen.TankUnit;
 import mindustry.type.UnitType;
 import mindustry.type.Weapon;
 import mindustry.type.unit.TankUnitType;
@@ -41,7 +42,7 @@ public class M247SergeantYork {
             envDisabled = Env.underwater;
 
             // Конструктор сущности юнита
-            constructor = UnitEntity::create;
+            constructor = TankUnit::create;
 
             // Оружие: M247-weapon (сдвоенные автопушки)
             weapons.add(new Weapon("umt-java-M247-weapon") {{

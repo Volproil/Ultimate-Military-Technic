@@ -1,11 +1,11 @@
 package mindustry.content.units;
-
+import arc.math.geom.Rect;
 import arc.graphics.Color;
 import mindustry.content.Fx;
 import mindustry.entities.bullet.MissileBulletType;
 import mindustry.entities.effect.WaveEffect;
 import mindustry.gen.Sounds;
-import mindustry.gen.UnitEntity;
+import mindustry.gen.TankUnit;
 import mindustry.type.UnitType;
 import mindustry.type.Weapon;
 import mindustry.type.unit.TankUnitType;
@@ -25,10 +25,14 @@ public class MIM72 {
             outlineColor = Color.valueOf("2d2f39");
             omniMovement = false;
 
+
+            treadRects = new Rect[]{
+            new Rect(20 - 96f/2f, 7 - 134f/2f, 22, 110)
+            };
             envEnabled = Env.terrestrial | Env.space;
             envDisabled = Env.underwater;
 
-            constructor = UnitEntity::create;
+            constructor = TankUnit::create;
 
             // Визуальный эффект взрыва
             WaveEffect hitEffect = new WaveEffect() {{

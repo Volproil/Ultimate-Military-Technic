@@ -5,6 +5,7 @@ import mindustry.type.UnitType;
 import mindustry.type.unit.TankUnitType;
 import mindustry.gen.Sounds;
 import mindustry.gen.UnitEntity;
+import mindustry.gen.TankUnit;
 import mindustry.type.Weapon;
 import mindustry.content.Fx;
 import mindustry.world.meta.Env;
@@ -36,7 +37,7 @@ public class M113 {
             omniMovement = false;
             rotateMoveFirst = true;
 
-            constructor = UnitEntity::create;
+            constructor = TankUnit::create;
 
             weapons.add(new Weapon("umt-java-browning") {{
                 x = 2.7f;

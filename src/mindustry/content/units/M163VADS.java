@@ -5,6 +5,7 @@ import mindustry.content.Fx;
 import mindustry.entities.bullet.FlakBulletType;
 import mindustry.gen.Sounds;
 import mindustry.gen.UnitEntity;
+import mindustry.gen.TankUnit;
 import mindustry.type.UnitType;
 import mindustry.type.Weapon;
 import mindustry.type.unit.TankUnitType;
@@ -27,7 +28,7 @@ public class M163VADS {
             envEnabled = Env.terrestrial | Env.space;
             envDisabled = Env.underwater;
 
-            constructor = UnitEntity::create;
+            constructor = TankUnit::create;
 
             // Общий тип пули (Flak)
             FlakBulletType flak = new FlakBulletType() {{

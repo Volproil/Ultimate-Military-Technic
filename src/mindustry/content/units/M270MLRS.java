@@ -6,7 +6,8 @@ import mindustry.entities.part.DrawPart.PartProgress;
 import mindustry.entities.part.RegionPart;
 import mindustry.entities.pattern.ShootAlternate;
 import mindustry.gen.Sounds;
-import mindustry.gen.UnitEntity; // Убедитесь, что этот импорт есть
+import mindustry.gen.UnitEntity;
+import mindustry.gen.TankUnit; // Убедитесь, что этот импорт есть
 import mindustry.type.UnitType;
 import mindustry.type.Weapon;
 import mindustry.type.unit.TankUnitType;
@@ -38,7 +39,7 @@ public class M270MLRS {
             envEnabled = Env.terrestrial | Env.space;
             envDisabled = Env.underwater;
             outlineColor = Color.valueOf("2d2f39");
-            constructor = UnitEntity::create; 
+            constructor = TankUnit::create; 
 
             weapons.add(new Weapon("umt-java-m270mlrs-weapon") {{
                 x = 0f;

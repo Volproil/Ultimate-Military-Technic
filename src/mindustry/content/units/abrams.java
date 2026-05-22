@@ -10,6 +10,7 @@ import mindustry.entities.part.DrawPart.PartProgress;
 import mindustry.entities.part.RegionPart;
 import mindustry.gen.Sounds;
 import mindustry.gen.UnitEntity;
+import mindustry.gen.TankUnit;
 import mindustry.type.UnitType;
 import mindustry.type.Weapon;
 import mindustry.type.unit.TankUnitType;
@@ -43,7 +44,7 @@ public class abrams {
             envDisabled = Env.none; // 0 = Env.none
 
             // Конструктор сущности юнита
-            constructor = UnitEntity::create;
+            constructor = TankUnit::create;
 
             // Оружие 1: Главная пушка
             weapons.add(new Weapon("umt-java-abrams-weapon") {{

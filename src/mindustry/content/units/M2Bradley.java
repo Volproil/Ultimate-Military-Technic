@@ -8,6 +8,7 @@ import mindustry.entities.part.*; // Изменено для включения 
 import mindustry.entities.part.DrawPart.PartProgress;
 import mindustry.gen.Sounds;
 import mindustry.gen.UnitEntity;
+import mindustry.gen.TankUnit;
 import mindustry.type.UnitType;
 import mindustry.type.Weapon;
 import mindustry.type.unit.TankUnitType;
@@ -41,7 +42,7 @@ public class M2Bradley {
             envDisabled = Env.underwater;
 
             // Конструктор сущности юнита
-             constructor = UnitEntity::create;
+             constructor = TankUnit::create;
 
             // Основное оружие
             weapons.add(new Weapon("umt-java-m2bredley-weapon") {{

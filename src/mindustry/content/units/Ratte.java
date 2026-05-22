@@ -12,6 +12,7 @@ import mindustry.entities.effect.WaveEffect;
 import mindustry.entities.part.RegionPart;
 import mindustry.gen.Sounds;
 import mindustry.gen.UnitEntity;
+import mindustry.gen.TankUnit;
 import mindustry.graphics.Pal;
 import mindustry.type.UnitType;
 import mindustry.type.Weapon;
@@ -44,7 +45,7 @@ public class Ratte {
             envEnabled = Env.terrestrial | Env.space; // 14
             envDisabled = Env.underwater; // 2
 
-            constructor = UnitEntity::create;
+            constructor = TankUnit::create;
 
             // Оружие 1: ratte-weapon (главная башня)
             weapons.add(new Weapon("umt-java-ratte-weapon") {{

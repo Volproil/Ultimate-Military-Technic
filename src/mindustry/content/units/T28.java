@@ -10,6 +10,7 @@ import mindustry.entities.effect.WaveEffect;
 import mindustry.entities.part.RegionPart;
 import mindustry.gen.Sounds;
 import mindustry.gen.UnitEntity;
+import mindustry.gen.TankUnit;
 import mindustry.type.UnitType;
 import mindustry.type.Weapon;
 import mindustry.type.unit.TankUnitType;
@@ -42,7 +43,7 @@ public class T28 {
             envEnabled = Env.terrestrial | Env.space;
             envDisabled = Env.underwater;
 
-            constructor = UnitEntity::create;
+            constructor = TankUnit::create;
 
             // Оружие 1: Главная пушка T28
             weapons.add(new Weapon("umt-java-T28-weapon") {{

@@ -9,6 +9,7 @@ import mindustry.entities.abilities.ForceFieldAbility;
 import mindustry.entities.part.RegionPart; // RegionPart все еще используется, поэтому этот импорт нужен
 import mindustry.gen.Sounds;
 import mindustry.gen.UnitEntity;
+import mindustry.gen.TankUnit;
 import mindustry.graphics.Pal;
 import mindustry.type.UnitType;
 import mindustry.type.Weapon;
@@ -42,7 +43,7 @@ public class Gepard {
             envEnabled = Env.terrestrial | Env.space;
             envDisabled = Env.underwater;
 
-            constructor = UnitEntity::create;
+            constructor = TankUnit::create;
 
             // Оружие 1: Gepard-weapon (сдвоенные автопушки)
             weapons.add(new Weapon("umt-java-gepard-weapon") {{

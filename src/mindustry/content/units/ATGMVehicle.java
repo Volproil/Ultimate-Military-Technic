@@ -5,6 +5,7 @@ import mindustry.type.UnitType;
 import mindustry.type.unit.TankUnitType;
 import mindustry.gen.Sounds;
 import mindustry.gen.UnitEntity;
+import mindustry.gen.TankUnit;
 import mindustry.type.Weapon;
 import mindustry.ai.types.MissileAI;
 import mindustry.content.Fx;
@@ -29,7 +30,7 @@ public class ATGMVehicle {
             envEnabled = Env.terrestrial | Env.space;
             envDisabled = Env.underwater;
 
-        constructor = UnitEntity::create;
+        constructor = TankUnit::create;
 
             weapons.add(new Weapon("umt-java-ATGMVehicle-weapon") {{
                 x = 0.0f;
