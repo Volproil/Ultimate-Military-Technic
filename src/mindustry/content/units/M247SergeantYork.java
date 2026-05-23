@@ -18,7 +18,6 @@ public class M247SergeantYork {
 
     public static UnitType createM247SergeantYork() {
         return new TankUnitType("M247SergeantYork") {{
-            // Основные параметры юнита
             description = "Powerful anti-aircraft tank with dual autocannons.";
             hitSize = 17f;
             omniMovement = false;
@@ -33,18 +32,15 @@ public class M247SergeantYork {
             outlineColor = Color.valueOf("2d2f39");
 
             treadRects = new Rect[]{
-                new Rect(-40, 8, 1.5f, 2.5f) // x, y, width, height (float)
+            new Rect(-33f, -55f, 18f, 115f),
+            new Rect( 31f, -55f, 18f, 115f)
             };
 
-            // Флаги окружающей среды: 14 = Env.terrestrial | Env.space
             envEnabled = Env.terrestrial | Env.space;
-            // Флаги окружающей среды: 2 = Env.underwater
             envDisabled = Env.underwater;
 
-            // Конструктор сущности юнита
             constructor = TankUnit::create;
 
-            // Оружие: M247-weapon (сдвоенные автопушки)
             weapons.add(new Weapon("umt-java-M247-weapon") {{
                 x = 0f;
                 y = 0f;
