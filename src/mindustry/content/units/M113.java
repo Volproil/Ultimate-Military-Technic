@@ -1,4 +1,5 @@
 package mindustry.content.units;
+import arc.math.geom.Rect;
 
 import arc.graphics.Color;
 import mindustry.type.UnitType;
@@ -37,6 +38,12 @@ public class M113 {
             omniMovement = false;
             rotateMoveFirst = true;
 
+
+
+            treadRects = new Rect[]{
+            new Rect(-33f, -32f, 6f, 64f),
+            new Rect( 31f, -32f, 6f, 64f)
+            };
             constructor = TankUnit::create;
 
             weapons.add(new Weapon("umt-java-browning") {{

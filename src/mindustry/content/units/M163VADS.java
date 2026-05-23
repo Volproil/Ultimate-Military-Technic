@@ -1,4 +1,5 @@
 package mindustry.content.units;
+import arc.math.geom.Rect;
 
 import arc.graphics.Color;
 import mindustry.content.Fx;
@@ -27,6 +28,12 @@ public class M163VADS {
 
             envEnabled = Env.terrestrial | Env.space;
             envDisabled = Env.underwater;
+
+
+             treadRects = new Rect[]{
+            new Rect(-33f, -45f, 10f, 89f),
+            new Rect( 31f, -45f, 10f, 89f)
+            };
 
             constructor = TankUnit::create;
 
