@@ -7,6 +7,7 @@ public class MyUnits {
     public static UnitType M113;
     public static UnitType fpvdrone1;
     public static UnitType t1ship;
+    public static UnitType t2ship46e8a66000beaa5e90c4173c130fa56c357a6522aa3c7329932707077effa89f;
     public static UnitType ATGMVehicle;
     public static UnitType towrocket;
     public static UnitType MIM72;
@@ -21,6 +22,7 @@ public class MyUnits {
 
     public static void load() {
         t1ship = mindustry.content.units.t1ship.createUnit();
+        t2ship46e8a66000beaa5e90c4173c130fa56c357a6522aa3c7329932707077effa89f = mindustry.content.units.t2ship46e8a66000beaa5e90c4173c130fa56c357a6522aa3c7329932707077effa89f.createUnit();
         M113 = mindustry.content.units.M113.createM113();
         fpvdrone1 = mindustry.content.units.fpvdrone1.createFPVKamikaze();
         ATGMVehicle = mindustry.content.units.ATGMVehicle.createATGMVehicle();

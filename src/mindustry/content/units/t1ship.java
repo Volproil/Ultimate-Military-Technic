@@ -54,9 +54,9 @@ public class t1ship {
 
                         bullet = new BasicBulletType() {
                             {
-                                speed = 4;
+                                speed = 5;
                                 damage = 22;
-                                lifetime = 55;
+                                lifetime = 60;
                                 width = 24;
                                 height = 24;
                                 lightRadius = 22;
@@ -64,8 +64,8 @@ public class t1ship {
                                 lightColor = Color.white;
                                 frontColor = Color.white;
                                 backColor = Color.red;
-                                homingPower = 0.5f;
-                                homingRange = 100;
+                                homingPower = 0;
+                                homingRange = 0;
                             }
                         };
                     }
