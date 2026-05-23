@@ -36,7 +36,131 @@ public class t2ship46e8a66000beaa5e90c4173c130fa56c357a6522aa3c7329932707077effa
                 immunities.add(StatusEffects.wet);
 
                 constructor = UnitWaterMove::create;
+                weapons.add(new Weapon("umt-java-t2turret46e8a66000beaa5e90c4173c130fa56c357a6522aa3c7329932707077effa89f") {
+                    {
+                        x = 3;
+                        y = 10;
+                        rotate = true;
+                        rotateSpeed = 6;
+                        reload = 40;
+                        outlineColor = Color.valueOf("575767ff");
+                        recoil = 2;
+                        recoilTime = 30;
+                        omniMovement = false;
+                        ignoreRotation = false;
 
+                        bullet = new BasicBulletType() {
+                            {
+                                speed = 5;
+                                damage = 12;
+                                lifetime = 60;
+                                width = 15;
+                                height = 15;
+                                lightRadius = 16;
+                                lightOpacity = 0.5f;
+                                lightColor = Color.white;
+                                frontColor = Color.white;
+                                backColor = Color.red;
+                                homingPower = 0;
+                                homingRange = 0;
+                            }
+                        };
+                    }
+                });
+                weapons.add(new Weapon("umt-java-t2turret46e8a66000beaa5e90c4173c130fa56c357a6522aa3c7329932707077effa89f") {
+                    {
+                        x = -3;
+                        y = 0;
+                        rotate = true;
+                        rotateSpeed = 6;
+                        reload = 40;
+                        outlineColor = Color.valueOf("575767ff");
+                        recoil = 2;
+                        recoilTime = 30;
+                        omniMovement = false;
+                        ignoreRotation = false;
+
+                        bullet = new BasicBulletType() {
+                            {
+                                speed = 5;
+                                damage = 12;
+                                lifetime = 60;
+                                width = 15;
+                                height = 15;
+                                lightRadius = 16;
+                                lightOpacity = 0.5f;
+                                lightColor = Color.white;
+                                frontColor = Color.white;
+                                backColor = Color.red;
+                                homingPower = 0;
+                                homingRange = 0;
+                            }
+                        };
+                    }
+                });
+                weapons.add(new Weapon("umt-java-t2turret46e8a66000beaa5e90c4173c130fa56c357a6522aa3c7329932707077effa89f") {
+                    {
+                        x = 3;
+                        y = 0;
+                        rotate = true;
+                        rotateSpeed = 6;
+                        reload = 40;
+                        outlineColor = Color.valueOf("575767ff");
+                        recoil = 2;
+                        recoilTime = 30;
+                        omniMovement = false;
+                        ignoreRotation = false;
+
+                        bullet = new BasicBulletType() {
+                            {
+                                speed = 5;
+                                damage = 12;
+                                lifetime = 60;
+                                width = 15;
+                                height = 15;
+                                lightRadius = 16;
+                                lightOpacity = 0.5f;
+                                lightColor = Color.white;
+                                frontColor = Color.white;
+                                backColor = Color.red;
+                                homingPower = 0;
+                                homingRange = 0;
+                            }
+                        };
+                    }
+                });
+                weapons.add(new Weapon("umt-java-t2turret46e8a66000beaa5e90c4173c130fa56c357a6522aa3c7329932707077effa89f") {
+                    {
+                        x = -3;
+                        y = 10;
+                        rotate = true;
+                        rotateSpeed = 6;
+                        reload = 40;
+                        outlineColor = Color.valueOf("575767ff");
+                        recoil = 2;
+                        recoilTime = 30;
+                        omniMovement = false;
+                        ignoreRotation = false;
+
+                        bullet = new BasicBulletType() {
+                            {
+                                speed = 5;
+                                damage = 12;
+                                lifetime = 60;
+                                width = 15;
+                                height = 15;
+                                lightRadius = 16;
+                                lightOpacity = 0.5f;
+                                lightColor = Color.white;
+                                frontColor = Color.white;
+                                backColor = Color.red;
+                                homingPower = 0;
+                                homingRange = 0;
+                            }
+                        };
+                    }
+                });
+                
                 load();
             }
         };
