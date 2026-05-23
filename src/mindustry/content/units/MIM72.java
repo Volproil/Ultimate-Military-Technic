@@ -1,4 +1,5 @@
 package mindustry.content.units;
+
 import arc.math.geom.Rect;
 import arc.graphics.Color;
 import mindustry.content.Fx;
@@ -25,16 +26,16 @@ public class MIM72 {
             outlineColor = Color.valueOf("2d2f39");
             omniMovement = false;
 
-
             treadRects = new Rect[]{
-            new Rect(20 - 96f/2f, 7 - 134f/2f, 22, 110)
+            new Rect(-33f, -55f, 18f, 115f),
+            new Rect( 31f, -55f, 18f, 115f)
             };
+
+
             envEnabled = Env.terrestrial | Env.space;
             envDisabled = Env.underwater;
-
             constructor = TankUnit::create;
 
-            // Визуальный эффект взрыва
             WaveEffect hitEffect = new WaveEffect() {{
                 lifetime = 25f;
                 sizeFrom = 10f;
@@ -45,7 +46,6 @@ public class MIM72 {
                 colorTo = Color.valueOf("ff0010");
             }};
 
-            // Общий тип ракеты
             MissileBulletType missile = new MissileBulletType() {{
                 speed = 3f;
                 lifetime = 70f;
@@ -63,7 +63,7 @@ public class MIM72 {
                 collidesGround = true;
                 splashDamageRadius = 40f;
                 splashDamage = 100f;
-                sprite = "umt-java-towrocket"; // Убедись, что спрайт есть
+                sprite = "umt-java-towrocket";
                 shootEffect = Fx.shootSmall;
                 smokeEffect = Fx.shootSmallSmoke;
                 targetAir = false;
@@ -71,10 +71,9 @@ public class MIM72 {
                 this.hitEffect = hitEffect;
             }};
 
-            // Четыре одинаковых орудия в разных позициях
             float[][] positions = {
-                {-4f, 0f},
-                { 4f, 0f},
+                {-4f,  0f},
+                { 4f,  0f},
                 {-4f, -4f},
                 { 4f, -4f}
             };
@@ -89,12 +88,11 @@ public class MIM72 {
                     ignoreRotation = true;
                     reload = 310f;
                     recoil = 1.7f;
-                    shootSound = Sounds.shoot; // missileSmall
+                    shootSound = Sounds.shoot;
                     layerOffset = 1f;
                     bullet = missile;
                 }});
             }
-
         }};
     }
 }
