@@ -34,8 +34,10 @@ public class M270MLRS {
             rotateSpeed = 2f;
             treadPullOffset = 4;
             treadRects = new Rect[]{
-                new Rect(-40, 10, 20, 20f)
+            new Rect(-33f, -55f, 18f, 115f),
+            new Rect( 31f, -55f, 18f, 115f)
             };
+
             envEnabled = Env.terrestrial | Env.space;
             envDisabled = Env.underwater;
             outlineColor = Color.valueOf("2d2f39");
