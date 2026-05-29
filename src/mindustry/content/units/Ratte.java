@@ -39,7 +39,8 @@ public class Ratte {
             // layerOffset = -1f; // Удалено по запросу пользователя
 
             treadRects = new Rect[]{
-                new Rect(20 - 96f/2f, -78f, 22, 155f)
+            new Rect(-100f, -170f, 18f, 340f),
+            new Rect( 100f, -170f, 18f, 340f)
             };
 
             envEnabled = Env.terrestrial | Env.space; // 14
