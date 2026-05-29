@@ -32,7 +32,7 @@ public class Ratte {
             speed = 0.6f;
             targetAir = false; // Последнее значение из HJSON
             targetGround = true; // Последнее значение из HJSON
-            rotateSpeed = 2.0f;
+            rotateSpeed = 0.5f;
             range = 200f;
             treadPullOffset = 4;
             outlineColor = Color.valueOf("2d2f39");
